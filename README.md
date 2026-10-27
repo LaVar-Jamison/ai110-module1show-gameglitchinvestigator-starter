@@ -26,18 +26,24 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+- [ The user is supposed to guess the number randomly generated and can use hints from the game to do so]
 - [ ] Detail which bugs you found.
+- 
+- I found a few bus including new game button not working after a win
+- The game will tell you to go lower, even if its not lower than the secret number
+- Game will tell you to go higher if input is higher than 100
+- 
 - [ ] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Checked the test_winning_guess function for bugs
+2. Checked the test_guesstoo_high function 
+3. Checked the test_guess_too_low_
+4. Updated the logic_utils.py_
+5. Ran pytest & analyzed going through steps 1-5 until all test cases passed
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -47,7 +53,16 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
-```
+```PS C:\Users\lavar\source\repos\ai110-module1show-gameglitchinvestigator-starter> python -m pytest
+=================================== test session starts ===================================
+platform win32 -- Python 3.13.7, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\lavar\source\repos\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.15.1
+collected 3 items
+
+tests\test_game_logic.py ...                                                         [100%]
+
+==================================== 3 passed in 0.05s ====================================
 
 ## 🚀 Stretch Features
 

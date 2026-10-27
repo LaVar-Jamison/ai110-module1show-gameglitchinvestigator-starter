@@ -41,3 +41,5 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+.vs/
+/TestResults/junitresults_1db7789c-da0d-4cd5-b0cd-9f53abc40266.xml

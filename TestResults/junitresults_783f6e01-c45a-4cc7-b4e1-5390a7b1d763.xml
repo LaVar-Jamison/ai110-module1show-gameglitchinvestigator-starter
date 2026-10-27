@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.048" timestamp="2026-10-26T16:51:41.027188-04:00" hostname="LAPTOP-96ES0S3H"><testcase classname="tests.test_game_logic" name="test_guess_too_high" file="tests\test_game_logic.py" line="7" time="0.000"><failure message="NotImplementedError: Refactor this function from app.py into logic_utils.py">def test_guess_too_high():
+        # If secret is 50 and guess is 60, hint should be "Too High"
+&gt;       result = check_guess(60, 50)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\test_game_logic.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+guess = 60, secret = 50
+
+    def check_guess(guess, secret):
+        """
+        Compare guess to secret and return (outcome, message).
+    
+        outcome examples: "Win", "Too High", "Too Low"
+        """
+&gt;       raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+E       NotImplementedError: Refactor this function from app.py into logic_utils.py
+
+logic_utils.py:21: NotImplementedError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>
